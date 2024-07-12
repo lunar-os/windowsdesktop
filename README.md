@@ -1,5 +1,5 @@
-### Windows Rose Pine Desktop
-My windows desktop configs
+<h1 align="center">Windows Rose Pine Desktop</h1>
+<h3 align="center">My windows desktop configs</h3>
 ![NVIDIA_Overlay_3kcfRz17hk](https://github.com/user-attachments/assets/9a618b4b-fdbb-4119-857c-9a92e089cccb)
 
 - Widgets made with [Rainmeter](https://www.rainmeter.net/)
