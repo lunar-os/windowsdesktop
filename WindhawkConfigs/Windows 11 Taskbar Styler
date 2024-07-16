@@ -1,5 +1,5 @@
 {
-  "theme": "TranslucentTaskbar",
+  "theme": "",
   "controlStyles[0].target": "Taskbar.TaskListButton",
   "controlStyles[0].styles[0]": "CornerRadius=3",
   "resourceVariables[0].variableKey": "",
@@ -45,5 +45,9 @@
   "controlStyles[13].styles[0]": "Visibility=Collapsed",
   "controlStyles[12].styles[1]": "Foreground=#e0def4",
   "controlStyles[14].target": "Windows.UI.Xaml.Controls.TextBlock#InnerTextBlock[Text=]",
-  "controlStyles[14].styles[0]": "Text="
+  "controlStyles[14].styles[0]": "Text=",
+  "controlStyles[15].target": "Rectangle#BackgroundFill",
+  "controlStyles[15].styles[0]": "Fill=Transparent",
+  "controlStyles[16].target": "Rectangle#BackgroundStroke",
+  "controlStyles[16].styles[0]": "Fill=Transparent"
 }
