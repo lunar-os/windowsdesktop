@@ -1,0 +1,320 @@
+:root {
+    --accent-theme:#ebbcba;
+    --clock-font: DS-Digital;
+  }
+
+body {
+    background: #191724;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('DS-Digital-Bold.woff2') format('woff2'),
+        url('DS-Digital-Bold.woff') format('woff'),
+        url('DS-Digital-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.fontbtn {
+    margin: 23px;
+    padding: 12px; 
+    background-color: #26233a;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+
+.fontbtn:hover {
+    cursor: default;
+    background-color: #26233a;
+    border-radius: 30px;
+    height: 116px;
+    width: 105px;
+}
+
+.fontbtn .icon {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    margin-top:15px; /* Half of the icon's height */
+    margin-left: 15px; /* Half of the icon's width */
+    transition: visibility 0.4s, opacity 0.4s; /* Add transition for visibility and opacity */
+    opacity: 1; /* Initially visible */
+    visibility: visible; /* Initially visible */
+}
+
+.fontbtn:hover .icon {
+    opacity: 0; /* Hide the icon on hover */
+    visibility: hidden; /* Hide the icon on hover */
+}
+
+.fontbtn .icon i{
+    color: var(--accent-theme);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.fontbtn button {
+    width: 100px;
+    margin-top: 5px;
+    position: block;
+    transition: 0.4s;
+    background-color: #26233a;  
+    font-size: 22px;
+    text-align: left;
+    opacity: 0;
+    margin: 3px;
+    border: none;
+}
+
+.fontbtn .divider {
+    width: 100%;
+    height: 2px;
+    background-color: #393552;
+    opacity: 0;
+}
+.fontbtn:hover .divider{
+    opacity: 1;
+}
+.fontbtn:hover button{
+    opacity: 1;
+}
+
+.fontbtn button:hover{
+    color: var(--accent-theme);
+}
+
+
+.fontbtn .Font1 {font-family: 'Lora', serif; font-size: 23px;}
+.fontbtn .Font2 {font-family: 'Poppins', serif;}
+.fontbtn .Font3 {font-family: 'DS-Digital', 'serif'; font-size: 27px;}
+
+
+.colorbtn {
+    margin: 23px;
+    margin-left: 0px ;
+    padding: 12px; 
+    cursor: default;
+    background-color: #26233a;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.colorbtn:hover {
+    cursor: default;
+    background-color: #26233a;
+    border-radius: 30px;
+    height: 230px;
+}
+
+.colorbtn:hover button {
+    opacity: 1; /* Make buttons visible on hover */
+}
+
+.colorbtn button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid; /* Add a transparent border to all buttons */
+    margin-top: 5px;
+    position: block;
+    transition: 0.4s;
+    background-color: #232136;  
+    opacity: 0; /* Initially, set opacity to 0 to hide buttons */
+}
+
+.colorbtn button:hover {
+    transform: scale(0.90);
+}
+
+.colorbtn button:focus{
+    transform: scale(0.90);
+}
+
+/* Define background colors for each button */
+.colorbtn .color1 { border-color: #9ccfd8; }
+.colorbtn .color2 { border-color: #eb6f92; }
+.colorbtn .color3 { border-color: #f6c177; }
+.colorbtn .color4 { border-color: #31748f; }
+.colorbtn .color5 { border-color: #c4a7e7; }
+.colorbtn .color6 { border-color: #ebbcba; }
+
+.colorbtn .color1:focus  {background-color: #9ccfd8;}
+.colorbtn .color2:focus {background-color: #eb6f92;}
+.colorbtn .color3:focus {background-color: #f6c177;}
+.colorbtn .color4:focus {background-color: #31748f;}
+.colorbtn .color5:focus {background-color: #c4a7e7;}
+.colorbtn .color6:focus {background-color: #ebbcba}
+
+.colorbtn .color1:hover  {background-color: #9ccfd84f;}
+.colorbtn .color2:hover {background-color: #eb6f924f;}
+.colorbtn .color3:hover {background-color: #d799214f;}
+.colorbtn .color4:hover {background-color: #31748f4f;}
+.colorbtn .color5:hover {background-color: #c4a7e74f;}
+.colorbtn .color6:hover {background-color: #ebbcba4f}
+
+.colorbtn .icon {
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    margin-top:15px; /* Half of the icon's height */
+    margin-left: 15px; /* Half of the icon's width */
+    transition: visibility 0.4s, opacity 0.4s; /* Add transition for visibility and opacity */
+    opacity: 1; /* Initially visible */
+    visibility: visible; /* Initially visible */
+}
+
+.colorbtn:hover .icon {
+    opacity: 0; /* Hide the icon on hover */
+    visibility: hidden; /* Hide the icon on hover */
+}
+
+.colorbtn .icon i{
+    color: var(--accent-theme);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#clockContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock {
+    color: #e0def4;
+    font-size: 75px;
+    font-family: var(--clock-font);
+    letter-spacing: 7px;
+    font-weight: 500;
+    border: solid var(--accent-theme);
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 4px; 
+
+}
+
+.clock:hover {
+    letter-spacing: 9px;
+}
+
+#date {
+    color: #e0def4;
+    font-size: 15px; /* Adjust the font size as needed */
+    font-family: Poppins;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    transition: 0.4s;
+    letter-spacing: 0.5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-width: 0px;
+    border-color: var(--accent-theme);
+    opacity: 0.4;
+    
+}
+
+#date:hover {
+    opacity: 1;
+    letter-spacing: 2.5px;
+}
+
+#greeting {
+    color: #e0def4;
+    font-size: 14px; /* Adjust the font size as needed */
+    font-family: Poppins;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: 0.4s;
+    letter-spacing: 0.3px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-width: 0px;
+    opacity: 0.4;
+    border: solid var(--accent-theme);
+    margin-bottom: 0px;
+    border-bottom-width: 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: default;
+
+}
+
+#greeting:hover {
+    opacity: 1;
+    letter-spacing: 1.3px;
+}
+
+#credit {
+    font-family: Poppins;
+    font-weight: 400;
+    color: #e0def4;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 20px;
+    top: 1%;
+    left:1%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.weather-container{
+    color: #e0def4;
+    font-family: Poppins;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    opacity: 0.9;
+}    
+
+.weather-container #weather-description {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.7;
+    margin: 0px;
+}
+
+.weather-container #weather-info {
+    font-weight: 500;
+    font-size: 22px; 
+    margin: 0px;
+    word-spacing: 1px;
+}
