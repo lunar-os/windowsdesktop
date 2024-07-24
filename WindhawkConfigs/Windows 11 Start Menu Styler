@@ -1,6 +1,4 @@
 {
-  "controlStyles[11].target": "Border#AcrylicBorder",
-  "controlStyles[11].styles[0]": "Background:=<AcrylicBrush TintColor=\"#26233a\" TintLuminosityOpacity=\"0.8\" TintOpacity=\"0.5\" Opacity=\"1\" FallbackColor=\"#2b283f\"/>",
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[0].styles[0]": "Visibility=Visible",
   "controlStyles[0].styles[1]": "Width=348",
@@ -25,8 +23,11 @@
   "controlStyles[6].styles[0]": "Visibility=Collapsed",
   "controlStyles[7].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
   "controlStyles[7].styles[0]": "Visibility=Collapsed",
-  "controlStyles[10].target": "StartMenu.PinnedList",
-  "controlStyles[10].styles[0]": "Height=504",
-  "controlStyles[12].target": "StartDocked.NavigationPaneView#Margin",
-  "controlStyles[12].styles[0]": "Margin=210,0,210,0"
+  "controlStyles[8].target": "StartMenu.PinnedList",
+  "controlStyles[8].styles[0]": "Height=504",
+  "controlStyles[9].target": "StartDocked.NavigationPaneView#Margin",
+  "controlStyles[9].styles[0]": "Margin=210,0,210,0",
+  "theme": "",
+  "controlStyles[10].target": "Border#AcrylicBorder",
+  "controlStyles[10].styles[0]": "Background:=#191724"
 }
