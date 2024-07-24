@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>asev</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+</head>
+
+<body>
+    <div id="clockContainer">
+        <p id="greeting"></p>
+        <div id="time" class="clock" onclick="location.href='https://time.is/';">&nbsp;"></div>
+        <div id="date" class="clock" onclick="location.href='https://www.satchelone.com/timetable';">&nbsp;"></div>
+    </div>
+
+    <div class="weather-container" onclick="location.href='https://www.bbc.co.uk/weather/2649258';">&nbsp;
+        <p id="weather-info">Loading...</p>
+        <p id="weather-description">Loading...</p>
+    </div>
+
+    <h1 id="credit"></h1>
+
+    <div class="fontbtn">
+        <div class="icon"><i class="fa-duotone fa-font-case"></i></div>
+        <button class="Font1" onclick="changeClockFont(0)">Lora</button>
+        <div class="divider"></div> <!-- Divider -->
+        <button class="Font2" onclick="changeClockFont(1)">Poppins</button>
+        <div class="divider"></div> <!-- Divider -->
+        <button class="Font3" onclick="changeClockFont(2)">Digital</button>
+    </div>
+
+    <!-- Buttons for each color -->
+    <div class="colorbtn">
+        <div class="icon"><i class="fa-regular fa-droplet"></i></div>
+        <button class="color1" onclick="changeAccentColor(0)"></button>
+        <button class="color2" onclick="changeAccentColor(1)"></button>
+        <button class="color3" onclick="changeAccentColor(2)"></button>
+        <button class="color4" onclick="changeAccentColor(3)"></button>
+        <button class="color5" onclick="changeAccentColor(4)"></button>
+        <button class="color6" onclick="changeAccentColor(5)"></button>
+    </div>
+
+    <script>
+        // Array of colors
+        var colorList = ["#9ccfd8", "#eb6f92", "#f6c177", "#31748f", "#c4a7e7", "#ebbcba"];
+        var fontList = ["Lora", "Poppins", "DS-Digital"];
+
+        function changeAccentColor(index) {
+            var newColor = colorList[index];
+            document.documentElement.style.setProperty('--accent-theme', newColor);
+        }
+
+        function changeClockFont(index) {
+            var newFont = fontList[index];
+            document.documentElement.style.setProperty('--clock-font', newFont);
+        }
+
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+
+            var time = h + ":" + m;
+
+            document.getElementById("time").innerText = time;
+            document.getElementById("time").textContent = time;
+
+
+            var options = { weekday: 'long', day: 'numeric', month: 'short' };
+            var formattedDate = date.toLocaleDateString(undefined, options);
+            document.getElementById("date").innerText = formattedDate;
+            document.getElementById("date").textContent = formattedDate;
+
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const apiKey = '6ebad40703584245d1938bd64bf14438';
+            const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+
+
+            const city = 'Folkestone';
+            const units = 'metric';
+
+            const url = `${apiUrl}?q=${city}&units=${units}&appid=${apiKey}`;
+
+            async function fetchWeather() {
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+
+                    // Update weather information on the webpage
+                    const weatherInfo = document.getElementById('weather-info');
+                    const weatherDescription = document.getElementById('weather-description');
+
+                    // Round the temperature to the nearest whole number
+                    const temperature = Math.round(data.main.temp);
+
+                    // Display the temperature and weather description
+                    weatherInfo.textContent = ` ${temperature}°C`;
+                    weatherDescription.textContent = `${data.weather[0].description}`;
+
+                    // Display the weather icon
+                    const weatherIcon = document.createElement('i');
+                    weatherIcon.className = `wi wi-owm-${data.weather[0].id}`;
+                    weatherInfo.prepend(weatherIcon); // Add the weather icon before the temperature
+            } catch (error) {
+            console.error('Error fetching weather data:', error);
+        }
+    }
+    fetchWeather();
+        });
+
+        const time = new Date().getHours();
+            let greeting;
+            if (time < 10) {
+            greeting = "Good morning, Archie";
+            } else if (time < 20) {
+            greeting = "Good afternoon, Archie";
+            } else {
+            greeting = "Good evening Archie";
+            }
+            document.getElementById("greeting").innerHTML = greeting;
+    </script>
+</body>
+
+</html>
+
