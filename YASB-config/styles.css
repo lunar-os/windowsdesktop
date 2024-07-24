@@ -1,0 +1,248 @@
+* {
+  /* Font used with icons is NerdFonts JetBrainsMono */
+  font-family: 'JetBrainsMono NF', 'Bars';
+  font-size: 12px;
+  color: #9cd8a0;
+  
+}
+
+.bar {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 5px 7px;
+}
+
+.container-right .widget {
+  border-radius: 6px;
+}
+
+.container-right .widget * {
+  color: #ff0000;
+}
+
+.komorebi-workspaces {
+  margin-left: 2;
+  margin-top: 0;
+  font-family: "DaddyTimeMono Nerd Font";
+  background: #1f1d2e;
+  border-radius: 13px;
+  margin-bottom: 3.5;
+  padding: 0px 7px;
+  font-size: 12;
+  max-width: 400px;
+  padding-right: -35;
+  margin-right: -35;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ws-btn {
+  border-radius: 6px;
+  font-size: 22px;
+  width: 14px;
+  height: 14px;
+  padding: 0px 3px 0 2px;
+  color:  #6e6a86;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.ws-btn:hover {
+  color:  rgba(218, 231, 255, 0.5);
+}
+
+.ws-btn.active {
+  background-color: #ebbcba;
+  color:  rgba(0,0,0,0);
+  width: 25px;
+  height: 13;
+  margin-right: 3;
+  margin-left: 3;
+  padding: -1px 3px 0 2px;
+}
+
+.ws-btn.populated {
+  background-color: #6e6a86;
+  color:  rgba(0,0,0,0);
+  width: 7px;
+  height: 13;
+  margin-right: 3;
+  margin-left: 3;
+  padding: -1px 3px 0 2px;
+}
+
+.cpu-widget .label,
+.wifi-widget .label,
+.memory-widget .label,
+.traffic-widget .label,
+.battery-widget .label {
+  color: #ffffff;
+  padding: 2px 5px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.traffic-widget .label {
+  background: #B3D3D9;
+}
+
+.wifi-widget .label {
+  font-family: 'JetBrainsMono NF';
+  background: rgba(36, 51, 71, 0.3);
+}
+
+.cpu-widget .label {
+  background: #d3869b;
+}
+
+.battery-widget .label {
+  font-family: 'JetBrainsMono NF';
+  background: rgba(36, 51, 71, 0.3);
+}
+
+.battery-widget,
+.memory-widget {
+  margin: 0;
+}
+
+.memory-widget .label.status-low {
+  background: #689d6a;
+}
+.memory-widget .label.status-medium {
+  background: #fe8019;
+}
+.memory-widget .label.status-high {
+  background: #cc241d;
+}
+.active-window-widget {
+  margin-left: 0px;
+}
+.active-window-widget .label {
+  margin-left: 5;
+  margin-top: 0;
+  font-family: "JetBrainsMono NF";
+  background: #1f1d2e;
+  border-radius: 13px;
+  margin-bottom: 4;
+  padding: 5px;
+  padding-right: 10px;
+  font-size: 12;
+  max-width: 300px;
+  color: #b7b1e3;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+
+.komorebi-active-layout .label {
+  color: #5e86bd;
+  margin: 2px 1px;
+  padding: 0 1px 3px 1px;
+  font-family: 'JetBrainsMono NF';
+  border-radius: 3px;
+  background: rgba(36, 51, 71, 0.3);
+}
+
+.komorebi-active-layout .label:hover {
+  background: rgba(94, 134, 189, 0.2);
+}
+
+.clock-widget .label {
+  font-family: 'JetBrainsMono NF';
+  color: #ffffff;
+  margin: 8px 0;
+}
+
+.power-menu-widget {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: rgb(41, 42, 58);
+}
+.power-menu-widget .label {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.power-menu-widget .label:hover {
+  background-color: rgb(64, 64, 87);
+  border-radius: 14px;
+  color: white;
+}
+/* Power Buttons */
+.power-menu-widget .label {
+  color: rgb(235, 127, 158);
+}
+.power-menu-popup {
+  background-color: rgba(24, 24, 37, 0.9);
+  border-radius: 32px;
+  border: 4px solid rgb(41, 42, 58);
+}
+.power-menu-popup .button {
+  padding: 0px;
+  width: 240px;
+  height: 120px;
+  border-radius: 16px;
+  background-color: rgb(41, 42, 58);
+  font-family: "SegoeUI";
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+  margin: 8px;
+} 
+.power-menu-popup .button.hover {
+  background-color: rgb(55, 56, 75);
+  border: 1px solid rgb(55, 56, 75);
+}
+.power-menu-popup .button .label {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);  
+}
+.power-menu-popup .button .icon {
+  font-size: 48px;
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 0.25);  
+}
+.power-menu-popup .button.cancel .icon {
+  color: rgba(243, 139, 168, 0.55);
+}
+.power-menu-popup .button.cancel .label {
+  color: rgba(243, 139, 168, 0.95);
+}
+.power-menu-popup .button.shutdown .icon {
+  color: rgba(137, 180, 250, 0.55);
+}
+.power-menu-popup .button.shutdown .label {
+  color: rgba(137, 180, 250, 0.95);
+}
+
+.fake-widget-left {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  padding-bottom: 4px; /* Keep the bottom padding */
+}
+
+.fake-widget-left .label {
+  color: #1f1d2e;
+  background-color: #2a273f;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  margin-right: -5;
+}
+
+
+
+.media-widget {
+  margin-top: 0;
+  background: #2a273f;
+  margin-bottom: 3;
+  font-size: 12;
+  max-width: 250px;
+  margin-left: 0;
+  padding-right: 13px;
+  padding-left: 10px;
+  border-top-right-radius: 13px; /* Add this */
+  border-bottom-right-radius: 13px; /* Add this */
+}
