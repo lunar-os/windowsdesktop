@@ -17,23 +17,31 @@
 
 - Widgets made with [Rainmeter](https://www.rainmeter.net/)
 - [Wallpaper](https://cdn.discordapp.com/attachments/888839136725844038/1260893512233390130/beach-sea-coast-water-rock-ocean-shore-wave-formation-cliff-cove-tower-bay-rock-formation-stack-terrain-material-body-of-water-rocks-waves-cape-islet-wind-wave-990802.png?ex=66924b97&is=6690fa17&hm=a69522e10ce7e56047e1b3741274f50b299f2e5cd09448641f8e66e5dc85d3a7&)
-- [Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip)
+- [Taskbar Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip) | [Windows Font](https://fonts.google.com/specimen/Mulish) | [Terminal font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/DaddyTimeMono)
 - [Colorscheme](https://rosepinetheme.com/)
 - Windows msstyles theme: [by niivu](https://www.deviantart.com/niivu/art/Rose-Pine-for-Windows-11-955213259)
 - Discord themed with [Vencord](https://vencord.dev/) and [theme](https://github.com/catppuccin/discord)
 
 ## Extras
 
-- [Icon pack](https://github.com/lunar-os/windowsdesktop/blob/1cbd1e8c9553a8df2c5c8e95235494eba89c4b54/Extras/7TSP%20Lumicons%20Symbols.7z)
+- [Icon pack](https://github.com/lunar-os/windowsdesktop/blob/main/Extras/7tsp%20Catppuccin%20Mocha%20SE1.7z)
 - [Screenshot tool](https://getsharex.com/)
 - [Spotlight Search](https://www.flowlauncher.com/) | With my [config](https://github.com/lunar-os/windowsdesktop/blob/main/Extras/FlowLauncherTheme.xaml)
 - [AltSnap](https://github.com/RamonUnch/AltSnap) for window management
 - [Chrome theme](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
 - [Cursor](https://www.deviantart.com/idarques/art/Vision-Cursor-911891424)
+- [Image in Explorer](https://github.com/Maplespe/explorerTool)
+- Bar in bottom left is [YASB](https://github.com/da-rth/yasb/) Config is [here](https://github.com/lunar-os/windowsdesktop/tree/main/YASB-config)
+- WM is [komorebi](https://github.com/LGUG2Z/komorebi)
+- code editor is neovim with [lazyvim](https://www.lazyvim.org/)
+- Spotify themed with [Spicetify](https://spicetify.app/)
+- Startpage i made myself [here](https://github.com/lunar-os/windowsdesktop/tree/main/Extras/Startpage)
+- In order to seethe weather in the taskbar on the right you need to have [this](https://github.com/lunar-os/windowsdesktop/blob/main/Extras/weather_server) python script running
 
 
+![1](https://github.com/user-attachments/assets/2f02d9d0-66ab-4d4a-a954-f7895441eb85)
+![2](https://github.com/user-attachments/assets/b5853f1d-d128-4f94-9bdb-0879bc3f8c47)
+![0UTHP6VGGw](https://github.com/user-attachments/assets/9c105caa-e463-4f31-a4b2-9c89f48596ae)
 
-![NVIDIA_Overlay_3kcfRz17hk](https://github.com/user-attachments/assets/4a550ea7-8141-4c8f-90c1-e64b8d8dffe4)
-![NVIDIA_Overlay_Hqo2HoUH8o](https://github.com/user-attachments/assets/9968d00f-2f38-41e5-9206-5cc843a33c60)
-![NVIDIA_Overlay_WEwfhvBp07](https://github.com/user-attachments/assets/0f8c21ad-02f4-4ae9-bd43-23646ed7ff75)
+
 
