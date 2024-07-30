@@ -12,6 +12,8 @@
     </a>
 </p>
 
+[coming soon...](https://github.com/lunar-os/windowsdesktop/#COMING-SOON)
+
 ## Things I used
 
 
@@ -43,5 +45,7 @@
 ![2](https://github.com/user-attachments/assets/b5853f1d-d128-4f94-9bdb-0879bc3f8c47)
 ![0UTHP6VGGw](https://github.com/user-attachments/assets/9c105caa-e463-4f31-a4b2-9c89f48596ae)
 
+## COMING SOON 
+![image](https://github.com/user-attachments/assets/321ecf7f-f41c-4f5f-9436-a3727ffd9274)
 
 
