@@ -2,6 +2,7 @@
 <p align="center">
     <img src="https://github.com/rose-pine/rose-pine-theme/raw/main/assets/icon.png" width="80" />
     <h2 align="center">Windows Rose Pine Desktop</h2>
+    <h1 align="center"><a href="https://github.com/lunar-os/windowsdesktop2">‼️OUTDATED‼️</a></h2>
 </p>
 
 <p align="center">My windows desktop configs - Archie</p>
@@ -12,7 +13,7 @@
     </a>
 </p>
 
-[coming soon...](https://github.com/lunar-os/windowsdesktop/#COMING-SOON)
+[NEW VERSION](https://github.com/lunar-os/windowsdesktop2)
 
 ## Things I used
 
